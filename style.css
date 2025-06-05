@@ -10,6 +10,20 @@ h1 {
   margin: 16px 24px;
 }
 
+.resize-grid-btn {
+  margin: 8px 24px;
+  font-size: large;
+  font-weight: 700;
+  padding: 8px;
+  border: 1px dotted gray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.resize-grid-btn:active {
+  background-color: grey;
+}
+
 .container {
   border: 2px solid grey;
   margin: 24px;
