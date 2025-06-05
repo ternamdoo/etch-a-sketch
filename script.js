@@ -19,10 +19,16 @@ for (let i = 1; i <= 16; i++) {
 const cells = document.querySelectorAll('.grid-cell');
 cells.forEach((cell) => colorCell(cell));
 
+
+function generateRandomNumber(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
+
 // Function to color a cell on mouse hover event
 function colorCell(cell) {
   cell.addEventListener('mouseover', (event) => {
     event.stopPropagation();
-    cell.style.backgroundColor = 'green';
+    randomColor = `rgb(${generateRandomNumber(255)} ${generateRandomNumber(255)} ${generateRandomNumber(255)})`
+    cell.style.backgroundColor = randomColor;
   })
 }
