@@ -27,7 +27,7 @@ resizeGridBtn.classList.add('resize-grid-btn');
 gridContainer.parentNode.insertBefore(resizeGridBtn, gridContainer);
 
 resizeGridBtn.addEventListener('click', () => {
-  input = prompt('Enter a number between 0 and 100');
+  input = prompt('Enter a number between 1 and 100');
   input = Math.abs(parseInt(input));
   if (input !== NaN) {
     if (input > 0 && input <= 100) {
@@ -36,7 +36,7 @@ resizeGridBtn.addEventListener('click', () => {
       createGrid(input);
       colorGrid();
     } else {
-      alert('Please enter a number between 0 - 100!')
+      alert('Please enter a number between 1 - 100!')
     }
   }
 });
